@@ -1,0 +1,7 @@
+pm4py
+pandas
+numpy
+flask_caching
+dash
+dash_cytoscape
+dash_table
