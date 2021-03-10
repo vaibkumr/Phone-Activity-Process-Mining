@@ -34,3 +34,6 @@ Process Mining is "Mining" actionable information from event logs. One such acti
 
 # Warning:
 This isn't a very documented or planned project. It was meant for my own understanding of process mining and learning to use Dash. Be sceptic of everything here and do not use this in production (or do it post heavy scrutiny).
+
+# Note:
+I can't write beautiful css. Hence, the `assets` folder is stolen from the [official dash cytoscape project](https://github.com/plotly/dash-cytoscape).
