@@ -1,7 +1,7 @@
 # Process Mining for Android App Activity
 Process Mining is "Mining" actionable information from event logs. One such actionable information is the directly follows graph (DFG). This project is particularly aligned to process mining for Android App usage logs. However, with minor changes, process mining here can be generalized for any event log such as website visits, e-transactions and more.
 
-# Options:
+# DFG Options:
 ![](assets/ss.png)
 ## Time Dropdown:
 - `All` will create the DFG for the whole timespam of the csv logfile. 
@@ -18,7 +18,7 @@ Process Mining is "Mining" actionable information from event logs. One such acti
 - Resolution of `0` will display only the maximum frequency edges while the resolution of `100` will display all edges.
 - Note: Nodes with no edges are automatically removed.
 
-## Monte Carlo Simulator:
+# Monte Carlo Simulator:
 - Create a directed graph for transitions between apps with edge weight as probabilities derrived using past data.
 - Choose a starting node (`N_S`) (`Screen on (unlocked)` by default), Ending node (`N_E`) (`Screen off (locked)` by default) and number of monte carlo simulations (`n`).
 - Starting from `N_S` probabilistically traverse the graph until `N_E` is reached or 100 hops done.
