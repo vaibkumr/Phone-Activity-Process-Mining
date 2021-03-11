@@ -18,6 +18,15 @@ Process Mining is "Mining" actionable information from event logs. One such acti
 - Resolution of `0` will display only the maximum frequency edges while the resolution of `100` will display all edges.
 - Note: Nodes with no edges are automatically removed.
 
+## Monte Carlo Simulator:
+- Create a directed graph for transitions between apps with edge weight as probabilities derrived using past data.
+- Choose a starting node (`N_S`) (`Screen on (unlocked)` by default), Ending node (`N_E`) (`Screen off (locked)` by default) and number of monte carlo simulations (`n`).
+- Starting from `N_S` probabilistically traverse the graph until `N_E` is reached or 100 hops done.
+- Repeat above for `n` times
+- Print out the paths with their monte carlo path confidence levels
+- Fun: `How irrational are you?:` slider varies from 0 to 1 and determines how often must the transitions be made completely randomly as opposed to based on probabilities computed using past behavioral data.
+- See `monte_carlo_simulation.py` for more details.
+
 # How?
 1. Install `requirements.txt` using pip
 2. Modify the logfile location in `config.ini`
