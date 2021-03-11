@@ -21,7 +21,7 @@ def get_sessions_2(df, sleep_activity="Screen off (locked)",
 
 def load_data(f, break_span=5):
     df = pd.read_csv(f)
-    df = df[~df.Time.isna()]
+    df = df[~df.Time.isna()].iloc[::-1].iloc[3:, :] #reverse time, skip 3 rows
     df.Time = df.Date + " " + df.Time
     df.Time = pd.to_datetime(df.Time)
     df.drop("Date", axis=1, inplace=True)

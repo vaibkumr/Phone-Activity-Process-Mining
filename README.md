@@ -29,6 +29,11 @@ Process Mining is "Mining" actionable information from event logs. One such acti
 - No formatting required, in case you have a different source, modify the `load_data` function in `pm.py`. 
 
 # Todo:
+- DFG
+- Global and Local stats
+- Charts
+- Dash dashboard
+- Monte Carlo Simulator
 - Process Model Conformance checking for temporal behaviour variance analysis
 - Trace analysis
 
